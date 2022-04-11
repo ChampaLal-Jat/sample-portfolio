@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- //Link from font awesome wclass site(for icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- //Link from gsap install (for animatation) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Portfolio
+            </div>
+
+            <div class="menu">
+               <a href=""><i class="fa fa-home"></i> Home</a>
+               <a href=""><i class="fa fa-user"></i> About</a>
+               <a href=""><i class="fa fa-book"></i> Portfolio</a>
+               <a href=""><i class="fa fa-lock"></i> Gallary</a>
+               <a href=""><i class="fa fa-phone"></i> Contact</a>
+           </div>
+
+           <div class="s-icon">
+            <a href="www.facbook.com"><i class="fa fa-facebook s-icon1 fa-5px"></i></a>
+            <a href="www.instagram.com"><i class="fa fa-instagram s-icon2 fa-5px" ></i></a>
+            <a href="www.twitter.com"><i class="fa fa-twitter s-icon3 fa-5px"></i></a>
+            <a href="www.whatsapp.com"><i class="fa fa-whatsapp s-icon4 fa-5px"></i></a>
+            </div>
+        </nav>  
+    </header>
+    <!-- //using gsap animator(search on google gsap install) -->
+    <script>
+        gsap.from('nav',{duration:2,x:'-100%'})
+        gsap.from('.menu',{duration:3,delay:'2',x:'0%',opacity:0})
+        gsap.from('.s-icon',{duration:3,delay:'3',y:'100%'});
+    </script>
+</body>
+</html>
